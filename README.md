@@ -8,7 +8,7 @@ ich versuche mal in ein paar Sätzen herunterzuschreiben worum es in der gesamte
 
 Um die Diskussion zu verstehen fangen wir erstmal bei ein paar "Grundlagen" an. Wie funktioniert so ein Betriebssystem wie Windows eigentlich? Was ist dieses *User Mode* und *Kernel Mode* von dem alle reden.
 
-![Pasted image 20240107014010.png](app://c7e4ce590919c96a181feda23e7fbae9c312/home/anno/notes/My%20vault/Pasted%20image%2020240107014010.png?1704588010909)
+![img/Pasted image 20240107014010.png](app://c7e4ce590919c96a181feda23e7fbae9c312/home/anno/notes/My%20vault/Pasted%20image%2020240107014010.png?1704588010909)
 Kernel-Level und User-Level sind wie zwei verschiedene Ebenen in einem Computer. Mit unterschiedlichen Berechtigungen. Stell dir vor, dein Computer ist wie ein Haus.
 
 1. **Kernel-Level**: Das ist wie das Fundament und die tragenden Wände des Hauses. Es ist der tiefste Teil des Betriebssystems, der alles zusammenhält und kontrolliert. Hier werden wichtige Entscheidungen getroffen, wie z.B. wie der Speicher verwaltet wird, wie Programme miteinander kommunizieren und wie sie auf die Hardware des Computers zugreifen können. Weil es so grundlegend ist, ist es auch sehr mächtig. Programme, die hier laufen können quasi alles mit allem auf dem PC machen, sind nicht an Sicherheitskonzepte vom Betriebssystem gebunden und kleine Fehler können dazu führen, dass wir mit einem Blue Screen begrüßt werden. Aus diesem Grund  laufen mit solchen Berechtigungen keine "normalen" Programme, sondern vorrangig Treiber für Hardware (z.B. für deine Maus/Tastatur, Netzwerk, aber auch Arbeitsspeicher oder CPUs. etc.). Ein Großteil hiervon kommt direkt vorinstalliert von Windows mit.
